@@ -1,5 +1,6 @@
 
 .header{
+    
     height: 100vh;
     display: flex;
     align-items: center;
@@ -58,4 +59,58 @@
     font-size: 2rem;
     cursor: pointer;
     margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .header-content{
+        flex-direction: column;
+    }
+    
+
+    .header-content_image{
+        max-width: 90%;
+    }
+    
+    .header-content_image img{
+        width: 100%;
+        border-radius: 0 0 0 0;
+    
+    }
+
+
+    .header-content_text{
+        max-width: 90%  ;
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin:  0 0 0 10px;
+    
+    }
+    
+    .header-content_text p{
+        font-size: 3.6rem;
+        line-height: 4.2rem;
+    }
+
+
+    .consult-btn{
+        padding: 18px 34px ;
+        border-radius: 24px;
+        border: none;
+        font-size: 1.5rem;
+
+    }
+    
+    
+    
 }

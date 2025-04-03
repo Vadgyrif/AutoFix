@@ -69,3 +69,84 @@
 .ServiceInfo_image img{
     width: 70%;
 }
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .ServiceInfo{
+        flex-direction: column-reverse;
+        border-radius: 60px ;
+        padding: 0;
+    }
+
+
+    .ServiceInfo-About{
+
+        max-width: 100%;
+    }
+    
+
+
+    .ServiceInfo_image{
+        width: 100%;
+       
+    }
+    
+    .ServiceInfo_image img{
+        width: 100%;
+        border-radius: 60px 60px 10px 10px ;
+    }
+
+    .ServiceInfo_title{
+        margin: 20px 0;
+        font-size: 40px;
+    }
+
+    .ServiceInfo_text{
+        font-size: 20px;
+        margin: 5px;
+    }
+
+
+    .ServiceInfo_list{
+        font-size: 18px;
+        line-height: 26px;
+        width: 95%;
+        font-weight: 400;
+        
+    }
+    
+    .ServiceInfo_list li{
+        display: flex;
+        align-items: center;
+        
+        margin-bottom: 22px ;
+    }
+    
+    
+    .ServiceInfo_icon{
+        width: 50px;
+        padding: 0 10px 0 0;
+        
+    }
+    
+    .ServiceInfo_image{
+
+        width: 100%;
+    }
+    
+    .ServiceInfo_image img{
+        width: 100%;
+    }
+    
+    
+
+
+
+}
