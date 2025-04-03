@@ -1,6 +1,6 @@
 .calculator{
     max-width: 95%;
-    padding: 3%;
+    padding: 5%;
     margin: 60px auto;
     display: flex;
     flex-direction: column;
@@ -50,4 +50,32 @@
 
 .price-cash{
     color: yellow;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .calculator{
+        border-radius: 60px ;
+    }
+
+
+    .calculator-inputs{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .input-group{
+        margin: 0 0 20px 0;
+    }
+
+    .input-group input, select{
+        width: 95%;
+    }
+    
+    .calculator-explanation {
+        line-height: 22px;
+    }
+
 }
