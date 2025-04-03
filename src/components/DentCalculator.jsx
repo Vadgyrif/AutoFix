@@ -60,7 +60,7 @@ const DentCalculator = () => {
 
 
 
-            <h2 className="price">Орієнтована вартість : <span className="price-cash">{calculatePrice()} грн</span> </h2>
+            <h2 className="price">Орієнтована вартість : <span className="price-cash">{Math.round(calculatePrice())} грн</span> </h2>
             <p className="calculator-explanation"> *Розрахована лише приблизна вартість ремонту. Для більш точної оцінки вартості і складності ремонту радимо
                 Вам звернутися до нашого майстра на безкоштовну консультацію</p>
         </div>
