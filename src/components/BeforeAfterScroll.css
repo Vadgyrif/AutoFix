@@ -1,0 +1,12 @@
+.BeforeAfterContainer{
+    width: 70%;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .BeforeAfterContainer{
+        width: 100%;
+    }
+}

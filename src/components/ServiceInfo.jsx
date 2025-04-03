@@ -1,9 +1,9 @@
 import React from "react";
 import "./ServiceInfo.css";
-import ServiceImage from "../assets/ServiceInfo.png";
 import Ecology from "../assets/Ecology.png";
 import Money from "../assets/money.png"
 import Brush from "../assets/brush.png"
+import BeforeAfterSliderComponent from "./BeforeAfterScroll";
 
 const  ServiceInfo = () => {
 
@@ -29,7 +29,7 @@ return(
             </ul>
         </div>
         <div className="ServiceInfo_image"> 
-            <img src={ServiceImage} alt="122" />
+            <BeforeAfterSliderComponent />
         </div>
     </div>
 )
