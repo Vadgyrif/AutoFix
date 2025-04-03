@@ -1,7 +1,8 @@
-import './App.css';
 import Header from './components/Header';
 import './components/ServiceInfo';
+import './components/DentCalculator';
 import ServiceInfo from './components/ServiceInfo';
+import DentCalculator from './components/DentCalculator';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
     <Header />
 
     <ServiceInfo />
+
+    <DentCalculator />
 
     </div>
 
