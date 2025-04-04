@@ -68,3 +68,32 @@
 .sendEmailPhoto img {
     width: 70%;
 }
+
+
+@media (max-width: 768px) {
+
+    .sendEmail_title{
+        margin: 10px 0 55px 10px;
+    
+    }
+    
+
+    .sendEmailContainer{
+        flex-direction: column-reverse;    
+    }   
+
+    .sendEmailPhoto{
+        width: 95%;
+        margin: 0 0 30px 0;
+    }
+    
+    .sendEmailPhoto img {
+        width: 100%;
+    }
+
+    .sendEmail_form{
+        width: 95%;
+
+    }
+    
+}
