@@ -10,6 +10,9 @@ const  ServiceInfo = () => {
     return(
         <Element name="about">
             <div data-aos="fade-up" className="ServiceInfo">
+                <div className="ServiceInfo_image"> 
+                    <BeforeAfterSliderComponent />
+                </div>
                 <div className="ServiceInfo-About">
                     <div className="ServiceInfo_title">
                         Про послугу
@@ -29,9 +32,7 @@ const  ServiceInfo = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="ServiceInfo_image"> 
-                    <BeforeAfterSliderComponent />
-                </div>
+                
             </div>
         </Element>
     )
