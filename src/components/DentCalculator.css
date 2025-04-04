@@ -57,7 +57,7 @@
 @media (max-width: 768px) {
     .calculator{
         border-radius: 60px;
-        padding: 3%; /* Трохи менше padding для мобільних */
+        padding: 7%; /* Трохи менше padding для мобільних */
     }
 
     .calculator-inputs{

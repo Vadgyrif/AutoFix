@@ -1,12 +1,13 @@
-.BeforeAfterContainer{
+.BeforeAfterContainer {
     width: 70%;
+    height: 600px; /* Можна регулювати в залежності від розміру слайдера */
+    position: relative;
+    overflow: hidden; /* Щоб слайдер не виходив за межі */
 }
 
-
-
 @media (max-width: 768px) {
-
-    .BeforeAfterContainer{
+    .BeforeAfterContainer {
         width: 100%;
+        height: 400px; /* Для мобільних пристроїв можна зменшити висоту */
     }
 }
