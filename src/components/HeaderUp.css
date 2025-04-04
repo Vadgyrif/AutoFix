@@ -1,0 +1,83 @@
+.headerUp {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #111;
+    z-index: 1000;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .headerUp .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  
+  .headerUp .logo {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .headerUp .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .headerUp .nav a {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  .headerUp .nav a.active {
+    color: #ffd400;
+    border-bottom: 2px solid #ffd400;
+  }
+  
+  .headerUp .nav a:hover {
+    color: #ffd400;
+  }
+  
+  .headerUp .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .headerUp .burger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: 0.3s;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+
+  
+
+    .headerUp .nav {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #222;
+      flex-direction: column;
+      width: 200px;
+      padding: 20px;
+      display: none;
+    }
+  
+    .headerUp .nav.open {
+      display: flex;
+    }
+  
+    .headerUp .burger {
+      display: flex;
+    }
+  }
