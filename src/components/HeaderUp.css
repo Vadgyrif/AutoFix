@@ -69,6 +69,7 @@
       width: 100%; /* Замість фіксованої ширини 200px */
       padding: 20px;
       display: none;
+      box-sizing: border-box; /* Це допомагає запобігти виходу за межі */
   }
 
   .headerUp .nav.open {
@@ -78,8 +79,10 @@
   .headerUp .burger {
       display: flex;
   }
-}
 
-body {
-  overflow-x: hidden; /* Блокуємо горизонтальний скрол */
+  /* Виправляємо проблему з лівим краєм */
+  body {
+    overflow-x: hidden; /* Блокуємо горизонтальний скрол на всьому сайті */
+    margin: 0; /* Убираємо відступи */
+  }
 }
