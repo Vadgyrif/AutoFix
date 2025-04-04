@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Element } from "react-scroll";
 import emailjs from "@emailjs/browser";
 import "./ContactForm.css";
 import WorkPhoto from "../assets/WorkPhoto.png";
@@ -82,23 +83,25 @@ const ContsctForm = () => {
     };
 
     return (
-        <div className="sendEmail">
-            <h2 className="sendEmail_title">
-                Заповніть форму, надішліть фото вашого пошкодження і наш майстер <span>обов'язково з Вами зв'яжеться!</span>
-            </h2>
-            <div className="sendEmailContainer">
-                <form className="sendEmail_form" onSubmit={handleSubmit}>
-                    <input type="text" name="name" placeholder="Ім'я" onChange={handleChange} required />
-                    <input type="tel" name="phone" placeholder="Номер телефону" onChange={handleChange} required />
-                    <input type="email" name="email" placeholder="Email (необов'язково)" onChange={handleChange} />
-                    <input type="file" name="image" accept="image/*" onChange={handleFileChange} required />
-                    <button type="submit">Надіслати</button>
-                </form>
-                <div className="sendEmailPhoto">
-                    <img src={WorkPhoto} alt="99" />
+        <Element name="contact">
+            <div data-aos="fade-up" className="sendEmail">
+                <h2 className="sendEmail_title">
+                    Заповніть форму, надішліть фото вашого пошкодження і наш майстер <span>обов'язково з Вами зв'яжеться!</span>
+                </h2>
+                <div className="sendEmailContainer">
+                    <form className="sendEmail_form" onSubmit={handleSubmit}>
+                        <input type="text" name="name" placeholder="Ім'я" onChange={handleChange} required />
+                        <input type="tel" name="phone" placeholder="Номер телефону" onChange={handleChange} required />
+                        <input type="email" name="email" placeholder="Email (необов'язково)" onChange={handleChange} />
+                        <input type="file" name="image" accept="image/*" onChange={handleFileChange} required />
+                        <button type="submit">Надіслати</button>
+                    </form>
+                    <div className="sendEmailPhoto">
+                        <img src={WorkPhoto} alt="99" />
+                    </div>
                 </div>
             </div>
-        </div>
+        </Element>
     );
 };
 

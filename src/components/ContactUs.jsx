@@ -3,7 +3,7 @@ import "./ContactUs.css";
 
 const ContactUs = () => {
     return (
-        <div className="contactUs">
+        <div data-aos="fade-up" className="contactUs">
             < div className="contactUs_text" >
                 <h2  className="contactUs_title">Контакти</h2>
                 <ul  className="contactUs_list">

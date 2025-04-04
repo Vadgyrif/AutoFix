@@ -15,7 +15,7 @@ const DentCalculator = () => {
 
     return (
 
-        <div className="calculator">
+        <div data-aos="fade-up"  className="calculator">
             <h2 className="calculator-title">Калькулятор вартості ремонту*</h2>
              {/* кількість вм'ятин*/}
 

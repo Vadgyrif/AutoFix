@@ -1,6 +1,8 @@
 import React from "react";
 import headerImg from '../assets/header-image.png';
 import "./Header.css";
+import { scroller } from 'react-scroll';
+
 
 const Header = () => {
     return(
@@ -11,7 +13,19 @@ const Header = () => {
                 </div>
                 <div className="header-content_text">
                     <p>Видалення вм'ятин без фарбування</p>
-                    <button className="consult-btn">Безкоштовна консультація</button>
+                    <button 
+                        className="consult-btn" 
+                        onClick={() =>
+                            scroller.scrollTo('about', {
+                            duration: 800,
+                            delay: 0,
+                            smooth: 'easeInOutQuart'
+                            })
+                        }
+                        >
+                        Безкоштовна консультація
+                    </button>
+
                 </div>
                 
             </div>
