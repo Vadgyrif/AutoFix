@@ -1,7 +1,7 @@
 .ServiceInfo {
     max-width: 95%;
     padding: 3%;
-    margin: 60px auto;
+    margin: 0px auto;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -10,8 +10,8 @@
     border: 4px solid #1c1c1c;
     border-radius: 120px;
     box-sizing: border-box;
-    position: relative; /* Задає позиціонування, щоб слайдер не сплив на інші елементи */
-    z-index: 1; /* Ставить елемент на передній план */
+    position: relative; 
+    z-index: 1; 
 }
 
 .ServiceInfo-About {
