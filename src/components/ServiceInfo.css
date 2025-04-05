@@ -1,9 +1,3 @@
-.ServiceInfoWrapper {
-    min-height: 800px; /* або висота, яка точно покриває контент */
-    position: relative;
-    z-index: 0;
-    overflow: hidden; /* якщо є скролінг або "стрибки" через передзавантаження */
-}
 
 
 .ServiceInfo {
@@ -21,6 +15,7 @@
     position: relative; 
     z-index: 1;
     isolation: isolate;
+    margin-top: 60px;
 }
 
 .ServiceInfo-About {
