@@ -1,8 +1,10 @@
 .ServiceInfoWrapper {
+    min-height: 800px; /* або висота, яка точно покриває контент */
     position: relative;
     z-index: 0;
-    will-change: auto;
+    overflow: hidden; /* якщо є скролінг або "стрибки" через передзавантаження */
 }
+
 
 .ServiceInfo {
     max-width: 95%;

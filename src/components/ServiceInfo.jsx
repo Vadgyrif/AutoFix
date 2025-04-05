@@ -10,7 +10,7 @@ const ServiceInfo = () => {
     return (
         <Element name="about">
             <div className="ServiceInfoWrapper">
-                <div data-aos="fade-up" className="ServiceInfo">
+                <div className="ServiceInfo">
                     <div className="ServiceInfo_image"> 
                         <BeforeAfterSliderComponent />
                     </div>
