@@ -1,3 +1,9 @@
+.ServiceInfoWrapper {
+    position: relative;
+    z-index: 0;
+    will-change: auto;
+}
+
 .ServiceInfo {
     max-width: 95%;
     padding: 3%;
@@ -11,11 +17,8 @@
     border-radius: 120px;
     box-sizing: border-box;
     position: relative; 
-    z-index: 1; 
-    
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    will-change: transform;
+    z-index: 1;
+    isolation: isolate;
 }
 
 .ServiceInfo-About {
@@ -69,9 +72,8 @@
     width: 70%;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-
-    /* Виправлення для мобільних пристроїв */
     .ServiceInfo {
         flex-direction: column; 
         border-radius: 60px;
@@ -117,13 +119,5 @@
     .ServiceInfo_icon {
         width: 50px;
         padding: 0 10px 0 0;
-    }
-
-    .ServiceInfo_image {
-        width: 100%;
-    }
-
-    .ServiceInfo_image img {
-        width: 100%;
     }
 }
