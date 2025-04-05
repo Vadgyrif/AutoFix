@@ -1,7 +1,7 @@
 .ServiceInfo {
     max-width: 95%;
     padding: 3%;
-    margin: 0px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -10,6 +10,7 @@
     border: 4px solid #1c1c1c;
     border-radius: 120px;
     box-sizing: border-box;
+    transform: translateZ(0);
     position: relative; 
     z-index: 1; 
 }
@@ -69,7 +70,8 @@
 
     /* Виправлення для мобільних пристроїв */
     .ServiceInfo {
-        flex-direction: column; /* Заміна column-reverse на column для звичайного порядку */
+        flex-direction: column; 
+        margin: 20px auto;
         border-radius: 60px;
         padding: 0;
     }
